@@ -16,6 +16,9 @@ class TestsForAddFunction(unittest.TestCase):
         result = add_two_numbers(-5, -7)
         self.assertEqual(-12, result)
 
+    def test_one_negative(self):
+        result = add_two_numbers(5, -7)
+        self.assertEqual(-2, result)
 
 if __name__ == '__main__':
     unittest.main()
